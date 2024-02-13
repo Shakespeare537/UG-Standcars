@@ -8,18 +8,10 @@ Citizen.CreateThread(function()
                 if car.spawned == nil then
                     SpawnCar()
                 else
-                    TriggerEvent("ug-standcars:spin", 0.3)
+                    SetEntityHeading(car.spawned, GetEntityHeading(car.spawned) - spin)
                 end
             end
         Citizen.Wait(cooldown)
-    end
-end)
-
-RegisterNetEvent("ug-standcars:spin")
-AddEventHandler("ug-standcars:spin", function(spin)
-    local car = Config.Cars[math.random(1,#Config.Cars)]
-    if car.spin then
-        SetEntityHeading(car.spawned, GetEntityHeading(car.spawned) - spin)
     end
 end)
 
