@@ -37,6 +37,11 @@ function SpawnCar()
     SetVehicleLights(vehicle, 0)
     SetVehicleLightsMode(vehicle, 0)
     SetVehicleOnGroundProperly(vehicle)
+    SetVehicleColours(
+	vehicle --[[ Vehicle ]], 
+	Config.colorPrimary --[[ integer ]], 
+	Config.colorSecondary --[[ integer ]]
+    )
     FreezeEntityPosition(vehicle, true)
     SetVehicleCanBreak(vehicle, true)
     SetVehicleFullbeam(vehicle, false)

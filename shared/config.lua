@@ -4,6 +4,9 @@ Config.ShowRange = 200 -- range where cars loaded player in game
 Config.LockCar = true -- true if car can be locked / false if cars cannot be locked
 Config.Invisible = true -- true if car be invisible / false if cars not be invisible
 
+Config.colorPrimary = 0 -- https://pastebin.com/pwHci0xK
+Config.colorSecondary = 4 -- https://pastebin.com/pwHci0xK
+
 Config.Cars = {
     [1] = {
         car = "zentorno",
