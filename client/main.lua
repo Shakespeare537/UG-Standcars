@@ -39,8 +39,8 @@ function SpawnCar()
     SetVehicleOnGroundProperly(vehicle)
     SetVehicleColours(
 	vehicle --[[ Vehicle ]], 
-	Config.colorPrimary --[[ integer ]], 
-	Config.colorSecondary --[[ integer ]]
+	hash.colorPrimary --[[ integer ]], 
+	hash.colorPrimary --[[ integer ]]
     )
     FreezeEntityPosition(vehicle, true)
     SetVehicleCanBreak(vehicle, true)
