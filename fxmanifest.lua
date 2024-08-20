@@ -1,6 +1,6 @@
 fx_version 'cerulean'
 game 'gta5'
-version '1.2'
+version '1.3'
 description 'Fivem Vehicle show cars'
 author 'Shakespeare'
 
